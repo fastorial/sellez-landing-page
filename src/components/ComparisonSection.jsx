@@ -60,7 +60,7 @@ export default function ComparisonSection({ content }) {
 							key={index}
 							variants={itemVariants}
 							className={`rounded-lg p-8 ${
-								index === 0
+								index === 2
 									? "bg-primary-600 text-white shadow-xl"
 									: "bg-gray-100 text-gray-800"
 							}`}
@@ -68,7 +68,7 @@ export default function ComparisonSection({ content }) {
 						>
 							<h3
 								className={`text-xl font-bold mb-6 pb-4 border-b ${
-									index === 0 ? "border-white/20" : "border-gray-300"
+									index === 2 ? "border-white/20" : "border-gray-300"
 								}`}
 							>
 								{platform.name}
@@ -79,10 +79,10 @@ export default function ComparisonSection({ content }) {
 										key={i}
 										className={`flex items-start gap-2 ${
 											feature.startsWith("✓")
-												? index === 0
+												? index === 2
 													? "text-white"
 													: "text-green-600"
-												: index === 0
+												: index === 2
 												? "text-white/70"
 												: "text-gray-500"
 										}`}
@@ -94,7 +94,7 @@ export default function ComparisonSection({ content }) {
 									</li>
 								))}
 							</ul>
-							{index === 0 && (
+							{index === 2 && (
 								<motion.a
 									href="#get-started"
 									whileHover={{ scale: 1.05 }}

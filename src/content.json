@@ -42,16 +42,6 @@
 		"subtitle": "See why Sellez is the better choice for workplace exchanges",
 		"platforms": [
 			{
-				"name": "Sellez",
-				"features": [
-					"✓ Verified colleagues only",
-					"✓ No spam listings",
-					"✓ Office delivery option",
-					"✓ Company-specific",
-					"✓ No random strangers"
-				]
-			},
-			{
 				"name": "Facebook Marketplace",
 				"features": [
 					"✗ Anyone can join",
@@ -69,6 +59,16 @@
 					"✗ Inconvenient meetups",
 					"✗ Not workplace focused",
 					"✗ Trust issues"
+				]
+			},
+			{
+				"name": "Sellez",
+				"features": [
+					"✓ Verified colleagues only",
+					"✓ No spam listings",
+					"✓ Office delivery option",
+					"✓ Company-specific",
+					"✓ No random strangers"
 				]
 			}
 		]
