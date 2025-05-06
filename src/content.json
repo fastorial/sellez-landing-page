@@ -94,7 +94,7 @@
 			},
 			{
 				"title": "Secure Messaging",
-				"description": "Communicate with colleagues without sharing personal contact information",
+				"description": "Communicate with colleagues securely",
 				"icon": "chat-bubble-left-right"
 			}
 		]
@@ -111,7 +111,7 @@
 			{
 				"number": "02",
 				"title": "Connect With Buyers",
-				"description": "Interested colleagues will message you through the platform to ask questions or make offers."
+				"description": "Interested colleagues will message you to ask questions or make offers."
 			},
 			{
 				"number": "03",
