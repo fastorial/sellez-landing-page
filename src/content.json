@@ -1,0 +1,196 @@
+{
+	"siteInfo": {
+		"name": "Sellez",
+		"tagline": "Internal Bazaar",
+		"logoAlt": "Sellez Logo"
+	},
+	"hero": {
+		"title": "Your Company's Private Marketplace",
+		"subtitle": "Buy and sell items exclusively with your colleagues in a trusted, secure environment",
+		"ctaButtonText": "Get Early Access",
+		"emailPlaceholder": "Enter your work email",
+		"imageAlt": "Sellez app mockup"
+	},
+	"uspSection": {
+		"title": "Why Sellez Works Better",
+		"subtitle": "Built specifically for workplace communities",
+		"usps": [
+			{
+				"title": "Verified Colleagues",
+				"description": "Every seller and buyer is a verified employee, creating a trusted community",
+				"icon": "shield-check"
+			},
+			{
+				"title": "Spam-Free Experience",
+				"description": "All listings are manually reviewed to ensure quality and relevance",
+				"icon": "no-symbol"
+			},
+			{
+				"title": "Domain Restricted",
+				"description": "Only accessible with your company email, keeping the marketplace exclusive",
+				"icon": "lock-closed"
+			},
+			{
+				"title": "Easy Handovers",
+				"description": "Meet colleagues at the office for simple, safe transactions",
+				"icon": "hand-raised"
+			}
+		]
+	},
+	"comparison": {
+		"title": "How We Compare",
+		"subtitle": "See why Sellez is the better choice for workplace exchanges",
+		"platforms": [
+			{
+				"name": "Sellez",
+				"features": [
+					"✓ Verified colleagues only",
+					"✓ No spam listings",
+					"✓ Office delivery option",
+					"✓ Company-specific",
+					"✓ No random strangers"
+				]
+			},
+			{
+				"name": "Facebook Marketplace",
+				"features": [
+					"✗ Anyone can join",
+					"✗ Flooded with spam",
+					"✗ Meet unknown sellers",
+					"✗ General audience",
+					"✗ Safety concerns"
+				]
+			},
+			{
+				"name": "OLX / Craigslist",
+				"features": [
+					"✗ Anonymous users",
+					"✗ Fake listings common",
+					"✗ Inconvenient meetups",
+					"✗ Not workplace focused",
+					"✗ Trust issues"
+				]
+			}
+		]
+	},
+	"features": {
+		"title": "Features You'll Love",
+		"subtitle": "Designed for a seamless workplace marketplace experience",
+		"list": [
+			{
+				"title": "Smart Categories",
+				"description": "Browse items by department, location, or item type to find exactly what you need",
+				"icon": "tag"
+			},
+			{
+				"title": "Office Delivery",
+				"description": "Arrange to have items delivered directly to your desk or office location",
+				"icon": "truck"
+			},
+			{
+				"title": "Instant Notifications",
+				"description": "Get alerted when items you're watching change price or become available",
+				"icon": "bell"
+			},
+			{
+				"title": "Secure Messaging",
+				"description": "Communicate with colleagues without sharing personal contact information",
+				"icon": "chat-bubble-left-right"
+			}
+		]
+	},
+	"howItWorks": {
+		"title": "How It Works",
+		"subtitle": "Simple, secure, and straightforward",
+		"steps": [
+			{
+				"number": "01",
+				"title": "List Your Item",
+				"description": "Take a photo, add details, and set your price. Your listing will be reviewed within 24 hours."
+			},
+			{
+				"number": "02",
+				"title": "Connect With Buyers",
+				"description": "Interested colleagues will message you through the platform to ask questions or make offers."
+			},
+			{
+				"number": "03",
+				"title": "Complete the Sale",
+				"description": "Arrange a convenient time and location to exchange the item, typically at your workplace."
+			}
+		]
+	},
+	"faq": {
+		"title": "Frequently Asked Questions",
+		"subtitle": "Everything you need to know about Sellez",
+		"questions": [
+			{
+				"question": "Is Sellez affiliated with my employer?",
+				"answer": "No, Sellez is an independent platform. We simply verify your workplace email to ensure you're connecting with actual colleagues."
+			},
+			{
+				"question": "How are listings reviewed?",
+				"answer": "Our team reviews all listings to ensure they meet our community standards and are appropriate for a workplace marketplace."
+			},
+			{
+				"question": "Can I sell services in addition to items?",
+				"answer": "Yes! You can offer professional services, skills, or even carpooling arrangements to your colleagues."
+			},
+			{
+				"question": "What happens if there's a problem with a purchase?",
+				"answer": "Our support team is available to help mediate any issues. Since all users are colleagues, most disputes are resolved amicably."
+			},
+			{
+				"question": "Is there a fee to use Sellez?",
+				"answer": "Sellez is free to use during our beta period. We plan to introduce a small transaction fee in the future to support platform maintenance."
+			}
+		]
+	},
+	"cta": {
+		"title": "Ready to Join Your Company's Marketplace?",
+		"subtitle": "Be among the first to access Sellez when we launch at your company",
+		"buttonText": "Get Early Access",
+		"emailPlaceholder": "Enter your work email"
+	},
+	"legal": {
+		"disclaimer": "Sellez is not affiliated with or endorsed by any employer. It is an independent platform for facilitating exchanges between colleagues.",
+		"terms": "By using this service, you agree to our Terms of Use, which prohibit the listing of illegal items, misleading descriptions, or harassment of other users.",
+		"privacy": "We only collect your organizational email to verify your workplace. Your personal information is never shared with third parties.",
+		"moderation": "All listings are reviewed before publishing to ensure they meet our community standards and guidelines."
+	},
+	"footer": {
+		"copyright": "© 2025 Sellez, Inc. All rights reserved.",
+		"links": [
+			{
+				"name": "Terms",
+				"url": "#terms"
+			},
+			{
+				"name": "Privacy",
+				"url": "#privacy"
+			},
+			{
+				"name": "Contact",
+				"url": "#contact"
+			},
+			{
+				"name": "About",
+				"url": "#about"
+			}
+		],
+		"social": [
+			{
+				"name": "Twitter",
+				"url": "#"
+			},
+			{
+				"name": "LinkedIn",
+				"url": "#"
+			},
+			{
+				"name": "Instagram",
+				"url": "#"
+			}
+		]
+	}
+}
