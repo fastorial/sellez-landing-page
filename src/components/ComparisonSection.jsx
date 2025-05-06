@@ -95,13 +95,14 @@ export default function ComparisonSection({ content }) {
 								))}
 							</ul>
 							{index === 0 && (
-								<motion.button
+								<motion.a
+									href="#get-started"
 									whileHover={{ scale: 1.05 }}
 									whileTap={{ scale: 0.95 }}
-									className="mt-8 w-full py-3 px-4 bg-white text-primary-600 font-medium rounded-lg hover:bg-gray-100 transition-colors"
+									className="btn-primary mt-8 w-full py-3 px-4 bg-white text-primary-600 font-medium rounded-lg hover:bg-gray-100 transition-colors"
 								>
 									Get Started
-								</motion.button>
+								</motion.a>
 							)}
 						</motion.div>
 					))}
