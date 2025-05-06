@@ -28,20 +28,17 @@ export default function Header() {
 			transition={{ duration: 0.5 }}
 		>
 			<div className="container mx-auto px-4 flex justify-between items-center">
-				<motion.a href="#" className="flex items-center" whileHover={{ scale: 1.05 }}>
+				<motion.a
+					href="https://sellez.store/"
+					className="flex items-center"
+					whileHover={{ scale: 1.05 }}
+				>
 					<span
 						className={`text-2xl font-bold ${
 							scrolled ? "text-primary-600" : "text-white"
 						}`}
 					>
 						Sellez
-					</span>
-					<span
-						className={`ml-2 px-2 py-1 text-xs font-medium rounded-full ${
-							scrolled ? "bg-primary-100 text-primary-700" : "bg-white/20 text-white"
-						}`}
-					>
-						Internal Bazaar
 					</span>
 				</motion.a>
 
