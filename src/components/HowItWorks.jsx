@@ -74,11 +74,6 @@ export default function HowItWorks({ content }) {
 										{step.description}
 									</p>
 								</div>
-
-								{/* Connector line between steps (except the last one) */}
-								{index < content.steps.length - 1 && (
-									<div className="hidden md:block absolute top-1/2 right-0 w-1/2 h-1 bg-gradient-to-r from-primary-400 to-transparent z-0"></div>
-								)}
 							</div>
 						</motion.div>
 					))}
