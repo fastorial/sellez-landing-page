@@ -10,6 +10,7 @@ import CTA from "./components/CTA";
 import Legal from "./components/Legal";
 import Footer from "./components/Footer";
 import content from "./content.json";
+import { ToastContainer } from "react-toastify";
 
 function App() {
 	const [isLoaded, setIsLoaded] = useState(false);
@@ -36,6 +37,18 @@ function App() {
 				<Legal content={content.legal} />
 			</main>
 			<Footer content={content.footer} />
+			<ToastContainer
+				position="top-center"
+				autoClose={5000}
+				hideProgressBar={false}
+				newestOnTop={false}
+				closeOnClick={true}
+				rtl={false}
+				pauseOnFocusLoss
+				draggable
+				pauseOnHover
+				theme="light"
+			/>
 		</div>
 	);
 }

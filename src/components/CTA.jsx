@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import { useInView } from "react-intersection-observer";
 import { addToWaitlist } from "../util/Database";
+import { toast } from "react-toastify";
 
 export default function CTA({ content }) {
 	const [ref, inView] = useInView({
@@ -20,15 +21,16 @@ export default function CTA({ content }) {
 		addToWaitlist(emailInput)
 			.then((data) => {
 				console.log("Response from backend after adding to waitlist", data);
+				toast.success("You have been added to the waitlist!");
 				setEmailInput("");
 			})
 			.catch((error) => {
 				console.error("Error adding to waitlist:", error);
 				setEmailInput("");
 				if (error?.code == "23505") {
-					alert("You are already on the waitlist!");
+					toast.success("You are already on the waitlist!");
 				} else {
-					alert(
+					toast.error(
 						"Something went wrong. Please try again later or contact anushibin007@gmail.com."
 					);
 				}
