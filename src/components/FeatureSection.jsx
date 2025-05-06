@@ -114,7 +114,7 @@ export default function FeatureSection({ content }) {
 	};
 
 	return (
-		<section className="py-20 bg-gradient-to-br from-primary-50 to-accent-50">
+		<section id="features" className="py-20 bg-gradient-to-br from-primary-50 to-accent-50">
 			<div className="container mx-auto px-4 sm:px-6 lg:px-8">
 				<div className="text-center max-w-3xl mx-auto mb-16">
 					<motion.h2

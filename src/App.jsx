@@ -28,8 +28,8 @@ function App() {
 			<Header />
 			<main>
 				<Hero content={content.hero} />
-				<USPSection content={content.uspSection} />
 				<FeatureSection content={content.features} />
+				<USPSection content={content.uspSection} />
 				<ComparisonSection content={content.comparison} />
 				<HowItWorks content={content.howItWorks} />
 				<FAQ content={content.faq} />

@@ -46,6 +46,9 @@ export default function Header() {
 					<NavLink href="#features" scrolled={scrolled}>
 						Features
 					</NavLink>
+					<NavLink href="#why-sellez" scrolled={scrolled}>
+						Why Sellez?
+					</NavLink>
 					<NavLink href="#how-it-works" scrolled={scrolled}>
 						How It Works
 					</NavLink>
