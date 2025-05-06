@@ -124,24 +124,8 @@ export default function Hero({ content }) {
 					>
 						<div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
 							<div className="absolute inset-0 bg-gradient-to-br from-primary-200 to-secondary-200 flex items-center justify-center">
-								<div className="text-center p-8">
-									<div className="w-16 h-16 mx-auto mb-4 rounded-full bg-white/20 flex items-center justify-center">
-										<svg
-											xmlns="http://www.w3.org/2000/svg"
-											className="h-8 w-8 text-white"
-											viewBox="0 0 20 20"
-											fill="currentColor"
-										>
-											<path
-												fillRule="evenodd"
-												d="M10 2a4 4 0 00-4 4v1H5a1 1 0 00-.994.89l-1 9A1 1 0 004 18h12a1 1 0 00.994-1.11l-1-9A1 1 0 0015 7h-1V6a4 4 0 00-4-4zm2 5V6a2 2 0 10-4 0v1h4zm-6 3a1 1 0 112 0 1 1 0 01-2 0zm7-1a1 1 0 100 2 1 1 0 000-2z"
-												clipRule="evenodd"
-											/>
-										</svg>
-									</div>
-									<p className="text-lg font-semibold text-white">
-										App Preview Coming Soon
-									</p>
+								<div className="text-center">
+									<img src="/img/splash.png" alt="Splash Image" />
 								</div>
 							</div>
 						</div>
