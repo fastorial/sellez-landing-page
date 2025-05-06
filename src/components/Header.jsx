@@ -38,7 +38,7 @@ export default function Header() {
 							scrolled ? "text-primary-600" : "text-white"
 						}`}
 					>
-						Sellez
+						🛒 Sellez
 					</span>
 				</motion.a>
 
