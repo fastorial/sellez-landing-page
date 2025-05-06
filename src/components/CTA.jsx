@@ -1,11 +1,39 @@
 import { motion } from "framer-motion";
+import { useState } from "react";
 import { useInView } from "react-intersection-observer";
+import { addToWaitlist } from "../util/Database";
 
 export default function CTA({ content }) {
 	const [ref, inView] = useInView({
 		threshold: 0.1,
 		triggerOnce: true,
 	});
+
+	const [emailInput, setEmailInput] = useState("");
+
+	const handleFormSubmit = async (e) => {
+		// Don't refresh the page
+		e.preventDefault();
+
+		if (!emailInput) return;
+
+		addToWaitlist(emailInput)
+			.then((data) => {
+				console.log("Response from backend after adding to waitlist", data);
+				setEmailInput("");
+			})
+			.catch((error) => {
+				console.error("Error adding to waitlist:", error);
+				setEmailInput("");
+				if (error?.code == "23505") {
+					alert("You are already on the waitlist!");
+				} else {
+					alert(
+						"Something went wrong. Please try again later or contact anushibin007@gmail.com."
+					);
+				}
+			});
+	};
 
 	return (
 		<section
@@ -31,29 +59,33 @@ export default function CTA({ content }) {
 					>
 						{content.subtitle}
 					</motion.p>
-
-					<motion.div
-						ref={ref}
-						initial={{ opacity: 0, y: 20 }}
-						animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-						transition={{ duration: 0.5, delay: 0.4 }}
-						className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4"
-					>
-						<div className="relative flex-grow max-w-md mx-auto sm:mx-0">
-							<input
-								type="email"
-								placeholder={content.emailPlaceholder}
-								className="w-full px-5 py-4 rounded-lg text-gray-800 bg-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50"
-							/>
-						</div>
-						<motion.button
-							whileHover={{ scale: 1.05 }}
-							whileTap={{ scale: 0.95 }}
-							className="bg-accent-600 hover:bg-accent-700 text-white font-medium px-8 py-4 rounded-lg shadow-md hover:shadow-lg transition duration-200 whitespace-nowrap"
+					<form onSubmit={handleFormSubmit}>
+						<motion.div
+							ref={ref}
+							initial={{ opacity: 0, y: 20 }}
+							animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+							transition={{ duration: 0.5, delay: 0.4 }}
+							className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4"
 						>
-							{content.buttonText}
-						</motion.button>
-					</motion.div>
+							<div className="relative flex-grow max-w-md mx-auto sm:mx-0">
+								<input
+									type="email"
+									placeholder={content.emailPlaceholder}
+									required
+									className="w-full px-5 py-4 rounded-lg text-gray-800 bg-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50"
+									value={emailInput}
+									onChange={(e) => setEmailInput(e.target.value)}
+								/>
+							</div>
+							<motion.button
+								whileHover={{ scale: 1.05 }}
+								whileTap={{ scale: 0.95 }}
+								className="bg-accent-600 hover:bg-accent-700 text-white font-medium px-8 py-4 rounded-lg shadow-md hover:shadow-lg transition duration-200 whitespace-nowrap"
+							>
+								{content.buttonText}
+							</motion.button>
+						</motion.div>
+					</form>
 
 					<motion.div
 						initial={{ opacity: 0 }}

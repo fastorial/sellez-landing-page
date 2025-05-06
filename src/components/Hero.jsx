@@ -1,5 +1,7 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { addToWaitlist } from "../util/Database";
 
 export default function Hero({ content }) {
 	const [ref, inView] = useInView({
@@ -24,6 +26,32 @@ export default function Hero({ content }) {
 			y: 0,
 			transition: { duration: 0.6, ease: "easeOut" },
 		},
+	};
+
+	const [emailInput, setEmailInput] = useState("");
+
+	const handleFormSubmit = async (e) => {
+		// Don't refresh the page
+		e.preventDefault();
+
+		if (!emailInput) return;
+
+		addToWaitlist(emailInput)
+			.then((data) => {
+				console.log("Response from backend after adding to waitlist", data);
+				setEmailInput("");
+			})
+			.catch((error) => {
+				console.error("Error adding to waitlist:", error);
+				setEmailInput("");
+				if (error?.code == "23505") {
+					alert("You are already on the waitlist!");
+				} else {
+					alert(
+						"Something went wrong. Please try again later or contact anushibin007@gmail.com."
+					);
+				}
+			});
 	};
 
 	return (
@@ -56,26 +84,30 @@ export default function Hero({ content }) {
 						>
 							{content.subtitle}
 						</motion.p>
-
-						<motion.div
-							variants={itemVariants}
-							className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center lg:justify-start"
-						>
-							<div className="relative flex-grow max-w-md">
-								<input
-									type="email"
-									placeholder={content.emailPlaceholder}
-									className="w-full px-5 py-4 rounded-lg text-gray-800 bg-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50"
-								/>
-							</div>
-							<motion.button
-								whileHover={{ scale: 1.05 }}
-								whileTap={{ scale: 0.95 }}
-								className="btn-primary bg-accent-600 hover:bg-accent-700 whitespace-nowrap"
+						<form onSubmit={handleFormSubmit}>
+							<motion.div
+								variants={itemVariants}
+								className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center lg:justify-start"
 							>
-								{content.ctaButtonText}
-							</motion.button>
-						</motion.div>
+								<div className="relative flex-grow max-w-md">
+									<input
+										type="email"
+										placeholder={content.emailPlaceholder}
+										required
+										className="w-full px-5 py-4 rounded-lg text-gray-800 bg-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50"
+										value={emailInput}
+										onChange={(e) => setEmailInput(e.target.value)}
+									/>
+								</div>
+								<motion.button
+									whileHover={{ scale: 1.05 }}
+									whileTap={{ scale: 0.95 }}
+									className="btn-primary bg-accent-600 hover:bg-accent-700 whitespace-nowrap"
+								>
+									{content.ctaButtonText}
+								</motion.button>
+							</motion.div>
+						</form>
 
 						<motion.p variants={itemVariants} className="mt-4 text-sm text-white/70">
 							Join 500+ colleagues already on the waitlist
