@@ -14,9 +14,6 @@ export default function Footer({ content }) {
 						>
 							<a href="#" className="inline-flex items-center">
 								<span className="text-2xl font-bold text-white">SellEZ</span>
-								<span className="ml-2 px-2 py-1 text-xs font-medium rounded-full bg-white/10">
-									Internal Bazaar
-								</span>
 							</a>
 							<p className="mt-4 text-gray-400 text-sm max-w-xs">
 								A private marketplace exclusively for colleagues within your
@@ -64,6 +61,8 @@ export default function Footer({ content }) {
 								</motion.a>
 							))}
 						</div>
+						{/*
+							
 						<div className="mt-6">
 							<h4 className="text-sm font-medium mb-2">Join our newsletter</h4>
 							<div className="flex">
@@ -88,6 +87,7 @@ export default function Footer({ content }) {
 								</button>
 							</div>
 						</div>
+*/}
 					</div>
 				</div>
 

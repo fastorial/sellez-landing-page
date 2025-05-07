@@ -159,37 +159,21 @@
 		"moderation": "All listings are reviewed before publishing to ensure they meet our community standards and guidelines."
 	},
 	"footer": {
-		"copyright": "© 2025 SellEZ, Inc. All rights reserved.",
+		"copyright": "© 2025 SellEZ, Inc. All rights reserved. A project by Anu Shibin Joseph Raj.",
 		"links": [
 			{
-				"name": "Terms",
-				"url": "#terms"
-			},
-			{
-				"name": "Privacy",
-				"url": "#privacy"
-			},
-			{
-				"name": "Contact",
-				"url": "#contact"
-			},
-			{
-				"name": "About",
-				"url": "#about"
+				"name": "About the Developer",
+				"url": "http://anushibinj.fastorial.dev/"
 			}
 		],
 		"social": [
 			{
 				"name": "Twitter",
-				"url": "#"
+				"url": "https://x.com/anushibin007"
 			},
 			{
 				"name": "LinkedIn",
-				"url": "#"
-			},
-			{
-				"name": "Instagram",
-				"url": "#"
+				"url": "https://www.linkedin.com/in/anushibinj/"
 			}
 		]
 	}
