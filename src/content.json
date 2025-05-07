@@ -8,7 +8,7 @@
 		"title": "Your Company's Private Marketplace",
 		"subtitle": "Buy and sell items exclusively with your colleagues in a trusted, secure environment",
 		"ctaButtonText": "Get Early Access",
-		"emailPlaceholder": "Enter your work email",
+		"emailPlaceholder": "Enter your email",
 		"imageAlt": "SellEZ app mockup"
 	},
 	"uspSection": {
@@ -150,7 +150,7 @@
 		"title": "Ready to Join Your Company's Marketplace?",
 		"subtitle": "Be among the first to access SellEZ when we launch at your company",
 		"buttonText": "Get Early Access",
-		"emailPlaceholder": "Enter your work email"
+		"emailPlaceholder": "Enter your email"
 	},
 	"legal": {
 		"disclaimer": "SellEZ is not affiliated with or endorsed by any employer. It is an independent platform for facilitating exchanges between colleagues.",
