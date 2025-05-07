@@ -41,14 +41,12 @@ function App() {
 			<ScrollToTop />
 			<ToastContainer
 				position="top-center"
-				autoClose={5000}
+				autoClose={false}
 				hideProgressBar={false}
 				newestOnTop={false}
-				closeOnClick={true}
+				closeOnClick={false}
 				rtl={false}
 				pauseOnFocusLoss
-				draggable
-				pauseOnHover
 				theme="light"
 			/>
 		</div>

@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { addToWaitlist } from "../util/Database";
 import { toast } from "react-toastify";
+import SuccessToast from "./toasts/SuccessToast";
+import AlreadyExists from "./toasts/AlreadyExists";
 
 export default function Hero({ content }) {
 	const [ref, inView] = useInView({
@@ -40,14 +42,14 @@ export default function Hero({ content }) {
 		addToWaitlist(emailInput)
 			.then((data) => {
 				console.log("Response from backend after adding to waitlist", data);
-				toast.success("You have been added to the waitlist!");
+				toast.success(<SuccessToast />);
 				setEmailInput("");
 			})
 			.catch((error) => {
 				console.error("Error adding to waitlist:", error);
 				setEmailInput("");
 				if (error?.code == "23505") {
-					toast.success("You are already on the waitlist!");
+					toast.success(<AlreadyExists />);
 				} else {
 					toast.error(
 						"Something went wrong. Please try again later or contact anushibin007@gmail.com."
