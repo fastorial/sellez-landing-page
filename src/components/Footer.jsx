@@ -13,7 +13,7 @@ export default function Footer({ content }) {
 							className="mb-6"
 						>
 							<a href="#" className="inline-flex items-center">
-								<span className="text-2xl font-bold text-white">Sellez</span>
+								<span className="text-2xl font-bold text-white">SellEZ</span>
 								<span className="ml-2 px-2 py-1 text-xs font-medium rounded-full bg-white/10">
 									Internal Bazaar
 								</span>

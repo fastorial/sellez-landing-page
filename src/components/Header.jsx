@@ -38,7 +38,7 @@ export default function Header() {
 							scrolled ? "text-primary-600" : "text-white"
 						}`}
 					>
-						🛒 Sellez
+						🛒 SellEZ
 					</span>
 				</motion.a>
 
@@ -47,7 +47,7 @@ export default function Header() {
 						Features
 					</NavLink>
 					<NavLink href="#why-sellez" scrolled={scrolled}>
-						Why Sellez?
+						Why SellEZ?
 					</NavLink>
 					<NavLink href="#how-it-works" scrolled={scrolled}>
 						How It Works

@@ -1,18 +1,18 @@
 {
 	"siteInfo": {
-		"name": "Sellez",
+		"name": "SellEZ",
 		"tagline": "Internal Bazaar",
-		"logoAlt": "Sellez Logo"
+		"logoAlt": "SellEZ Logo"
 	},
 	"hero": {
 		"title": "Your Company's Private Marketplace",
 		"subtitle": "Buy and sell items exclusively with your colleagues in a trusted, secure environment",
 		"ctaButtonText": "Get Early Access",
 		"emailPlaceholder": "Enter your work email",
-		"imageAlt": "Sellez app mockup"
+		"imageAlt": "SellEZ app mockup"
 	},
 	"uspSection": {
-		"title": "Why Sellez Works Better",
+		"title": "Why SellEZ Works Better",
 		"subtitle": "Built specifically for workplace communities",
 		"usps": [
 			{
@@ -39,7 +39,7 @@
 	},
 	"comparison": {
 		"title": "How We Compare",
-		"subtitle": "See why Sellez is the better choice for workplace exchanges",
+		"subtitle": "See why SellEZ is the better choice for workplace exchanges",
 		"platforms": [
 			{
 				"name": "Facebook Marketplace",
@@ -62,7 +62,7 @@
 				]
 			},
 			{
-				"name": "Sellez",
+				"name": "SellEZ",
 				"features": [
 					"✓ Verified colleagues only",
 					"✓ No spam listings",
@@ -122,11 +122,11 @@
 	},
 	"faq": {
 		"title": "Frequently Asked Questions",
-		"subtitle": "Everything you need to know about Sellez",
+		"subtitle": "Everything you need to know about SellEZ",
 		"questions": [
 			{
-				"question": "Is Sellez affiliated with my employer?",
-				"answer": "No, Sellez is an independent platform. We simply verify your workplace email to ensure you're connecting with actual colleagues."
+				"question": "Is SellEZ affiliated with my employer?",
+				"answer": "No, SellEZ is an independent platform. We simply verify your workplace email to ensure you're connecting with actual colleagues."
 			},
 			{
 				"question": "How are listings reviewed?",
@@ -141,25 +141,25 @@
 				"answer": "Our support team is available to help mediate any issues. Since all users are colleagues, most disputes are resolved amicably."
 			},
 			{
-				"question": "Is there a fee to use Sellez?",
-				"answer": "Sellez is free and always will be. We plan to introduce non-intrusive ads in the future to support platform maintenance."
+				"question": "Is there a fee to use SellEZ?",
+				"answer": "SellEZ is free and always will be. We plan to introduce non-intrusive ads in the future to support platform maintenance."
 			}
 		]
 	},
 	"cta": {
 		"title": "Ready to Join Your Company's Marketplace?",
-		"subtitle": "Be among the first to access Sellez when we launch at your company",
+		"subtitle": "Be among the first to access SellEZ when we launch at your company",
 		"buttonText": "Get Early Access",
 		"emailPlaceholder": "Enter your work email"
 	},
 	"legal": {
-		"disclaimer": "Sellez is not affiliated with or endorsed by any employer. It is an independent platform for facilitating exchanges between colleagues.",
+		"disclaimer": "SellEZ is not affiliated with or endorsed by any employer. It is an independent platform for facilitating exchanges between colleagues.",
 		"terms": "By using this service, you agree to our Terms of Use, which prohibit the listing of illegal items, misleading descriptions, or harassment of other users.",
 		"privacy": "We only collect your organizational email to verify your workplace. Your personal information is never shared with third parties.",
 		"moderation": "All listings are reviewed before publishing to ensure they meet our community standards and guidelines."
 	},
 	"footer": {
-		"copyright": "© 2025 Sellez, Inc. All rights reserved.",
+		"copyright": "© 2025 SellEZ, Inc. All rights reserved.",
 		"links": [
 			{
 				"name": "Terms",
