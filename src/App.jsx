@@ -11,6 +11,7 @@ import Legal from "./components/Legal";
 import Footer from "./components/Footer";
 import content from "./content.json";
 import { ToastContainer } from "react-toastify";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
 	const [isLoaded, setIsLoaded] = useState(false);
@@ -37,6 +38,7 @@ function App() {
 				<Legal content={content.legal} />
 			</main>
 			<Footer content={content.footer} />
+			<ScrollToTop />
 			<ToastContainer
 				position="top-center"
 				autoClose={5000}
