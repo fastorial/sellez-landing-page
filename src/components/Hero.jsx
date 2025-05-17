@@ -114,7 +114,8 @@ export default function Hero({ content }) {
 						</form>
 
 						<motion.p variants={itemVariants} className="mt-4 text-sm text-white/70">
-							Join 500+ colleagues already on the waitlist
+							Beta will be out by June 2025. Join 50+ colleagues already on the
+							waitlist.
 						</motion.p>
 					</motion.div>
 

@@ -109,7 +109,8 @@ export default function CTA({ content }) {
 								clipRule="evenodd"
 							/>
 						</svg>
-						Your data is secure and will never be shared
+						Your data is secure and will never be shared. I won't send spam mails
+						either.
 					</motion.div>
 				</div>
 			</div>

@@ -7,7 +7,7 @@
 	"hero": {
 		"title": "Your Company's Private Marketplace",
 		"subtitle": "Buy and sell items exclusively with your colleagues in a trusted, secure environment",
-		"ctaButtonText": "Get Early Access",
+		"ctaButtonText": "Join the waitlist!",
 		"emailPlaceholder": "Enter your email",
 		"imageAlt": "SellEZ app mockup"
 	},
@@ -149,7 +149,7 @@
 	"cta": {
 		"title": "Ready to Join Your Company's Marketplace?",
 		"subtitle": "Be among the first to access SellEZ when we launch at your company",
-		"buttonText": "Get Early Access",
+		"buttonText": "Join the waitlist!",
 		"emailPlaceholder": "Enter your email"
 	},
 	"legal": {
